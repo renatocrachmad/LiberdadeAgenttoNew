@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .register-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #6a1b9a;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .input-group, .checkbox-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .input-group label, .checkbox-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .input-group input, .checkbox-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6a1b9a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #4a148c;
+  }
+  
+  .links {
+    margin-top: 10px;
+  }
+  
+  .links a {
+    color: #6a1b9a;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .links a:hover {
+    text-decoration: underline;
+  }
+  
