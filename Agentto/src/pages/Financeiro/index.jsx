@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import { useEventContext } from '../../contexts/EventContext/EventContext';
-import './style.css';
+import React, { useEffect, useState } from "react";
+import { useEventContext } from "../../contexts/EventContext/EventContext";
+import { useNavigate } from "react-router-dom"; 
+import "./style.css";
 
 const Financeiro = () => {
   const { eventos } = useEventContext();
+  const navigate = useNavigate(); 
   const [projecaoMensal, setProjecaoMensal] = useState(0);
   const [projecaoAnual, setProjecaoAnual] = useState(0);
 
@@ -12,7 +14,10 @@ const Financeiro = () => {
   }, [eventos]);
 
   const calcularProjecoes = (eventos) => {
-    const totalMensal = eventos.reduce((total, evento) => total + parseFloat(evento.valorTotalRecebido || 0), 0);
+    const totalMensal = eventos.reduce(
+      (total, evento) => total + parseFloat(evento.valorTotalRecebido || 0),
+      0
+    );
     const totalAnual = totalMensal * 12;
 
     setProjecaoMensal(totalMensal);
@@ -25,13 +30,13 @@ const Financeiro = () => {
         <h1 className="logo">Financeiro</h1>
         <nav>
           <ul className="menu">
-            <li>Início</li>
-            <li>Agenda</li>
-            <li>Financeiro</li>
+            <li onClick={() => navigate("/home")}>Início</li> 
+            <li onClick={() => navigate("/agenda")}>Agenda</li>
+            <li onClick={() => navigate("/financeiro")}>Financeiro</li> 
           </ul>
         </nav>
       </header>
-      
+
       <main className="content">
         <h2>Resumo Financeiro</h2>
         <table className="financial-table">
@@ -55,8 +60,12 @@ const Financeiro = () => {
 
         <div className="projection-section">
           <h3>Projeção de Lucros</h3>
-          <p><strong>Mensal:</strong> R$ {projecaoMensal.toFixed(2)}</p>
-          <p><strong>Anual:</strong> R$ {projecaoAnual.toFixed(2)}</p>
+          <p>
+            <strong>Mensal:</strong> R$ {projecaoMensal.toFixed(2)}
+          </p>
+          <p>
+            <strong>Anual:</strong> R$ {projecaoAnual.toFixed(2)}
+          </p>
         </div>
       </main>
 
