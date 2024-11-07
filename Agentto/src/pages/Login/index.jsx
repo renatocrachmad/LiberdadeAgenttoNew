@@ -1,6 +1,6 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import './style.css';
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import "./style.css";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -10,7 +10,7 @@ const Login = () => {
     // Aqui você pode adicionar a lógica de autenticação se necessário
 
     // Redireciona para a página Home
-    navigate('/home'); // Ajuste o caminho conforme a sua configuração de rotas
+    navigate("/home"); // Ajuste o caminho conforme a sua configuração de rotas
   };
 
   return (
@@ -33,10 +33,12 @@ const Login = () => {
           <a href="#">crie sua conta</a>
           <a href="#">esqueci minha senha</a>
         </div>
-        <p className="disclaimer">
-          Ao continuar, você concorda com os <a href="#">Termos de Uso</a> e a <a href="#">Política de Privacidade</a> da agentto e seus parceiros, e em receber comunicações.
-        </p>
       </div>
+      <p className="disclaimer">
+        Ao continuar, você concorda com os <a href="#">Termos de Uso</a> e a{" "}
+        <a href="#">Política de Privacidade</a> da agentto e seus parceiros, e
+        em receber comunicações.
+      </p>
     </div>
   );
 };

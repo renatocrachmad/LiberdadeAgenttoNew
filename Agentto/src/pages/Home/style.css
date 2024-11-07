@@ -3,50 +3,50 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  justify-content: flex-start; /* Alinha o conteúdo à esquerda */
+  align-items: flex-start;
+  height: 100vh; /* Garantir que o body ocupe 100% da altura da tela */
+  width: 100%; /* Garantir que o body ocupe 100% da largura */
 }
-
 
 .home-container {
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 1200px;
-  height: 100%;
+  width: 100vw; /* Ocupa toda a largura disponível */
+  height: 100vh; /* Ocupa toda a altura da tela */
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
 }
 
-
-.header {
+.aside {
   background-color: #6a1b9a;
   color: #fff;
   padding: 1rem;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 250px; /* Largura fixa da barra lateral */
+  height: 97%; /* Ocupa 100% da altura disponível */
 }
 
 .logo {
   font-size: 24px;
+  margin-bottom: 20px;
 }
-
 
 .menu {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
 }
 
 .menu li {
   cursor: pointer;
   color: #fff;
+  padding: 0.5rem 0;
   transition: color 0.3s;
 }
 
@@ -54,14 +54,13 @@ body {
   color: #e0e0e0;
 }
 
-
 .content {
-  flex-grow: 1;
+  flex-grow: 1; /* Faz o conteúdo ocupar o restante da largura disponível */
   padding: 1rem;
   display: flex;
   justify-content: space-around;
+  width: calc(100% - 250px); /* Garantir que o conteúdo ocupe o restante da largura (excluindo a barra lateral) */
 }
-
 
 .month-section {
   flex: 1;
@@ -81,7 +80,6 @@ body {
   background-color: #d0d0d0;
 }
 
-
 .add-button {
   position: absolute;
   bottom: 1rem;
@@ -100,7 +98,6 @@ body {
 .add-button:hover {
   background-color: #7b1fa2;
 }
-
 
 .footer {
   text-align: center;

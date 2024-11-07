@@ -1,5 +1,5 @@
-import React from 'react';
-import './style.css';
+import React from "react";
+import "./style.css";
 
 const Cadastro = () => {
   return (
@@ -22,15 +22,23 @@ const Cadastro = () => {
           </div>
           <div className="input-group">
             <label htmlFor="confirm-password">Repita sua senha</label>
-            <input type="password" id="confirm-password" name="confirm-password" />
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+            />
           </div>
-          <div className="checkbox-group">
-            <input type="checkbox" id="terms" name="terms" />
-            <label htmlFor="terms">Concordo com os Termos de Uso</label>
-          </div>
-          <div className="checkbox-group">
-            <input type="checkbox" id="privacy" name="privacy" />
-            <label htmlFor="privacy">Concordo com a Política de Privacidade</label>
+          <div className="checkboxContainer">
+            <div className="checkbox-group">
+              <input type="checkbox" id="terms" name="terms" />
+              <label htmlFor="terms">Concordo com os Termos de Uso</label>
+            </div>
+            <div className="checkbox-group">
+              <input type="checkbox" id="privacy" name="privacy" />
+              <label htmlFor="privacy">
+                Concordo com a Política de Privacidade
+              </label>
+            </div>
           </div>
           <button type="submit">Criar conta</button>
         </form>
