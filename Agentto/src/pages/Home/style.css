@@ -3,8 +3,6 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
   display: flex;
-  justify-content: flex-start; /* Alinha o conteúdo à esquerda */
-  align-items: flex-start;
   height: 100vh; /* Garantir que o body ocupe 100% da altura da tela */
   width: 100%; /* Garantir que o body ocupe 100% da largura */
 }
