@@ -1,7 +1,14 @@
 import React from "react";
 import "./style.css";
+import { useNavigate } from "react-router-dom";
 
 const Cadastro = () => {
+  const navigate = useNavigate();
+
+  const handleLoginRedirect = () => {
+    navigate("/"); // Redireciona para a página de Login configurada na rota raiz "/"
+  };
+
   return (
     <div className="register-container">
       <div className="register-box">
@@ -43,7 +50,7 @@ const Cadastro = () => {
           <button type="submit">Criar conta</button>
         </form>
         <div className="links">
-          <a href="#">Já tem uma conta? Entrar</a>
+          <a href="/">Já tem uma conta? Entrar</a>
         </div>
       </div>
     </div>

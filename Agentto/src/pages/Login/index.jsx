@@ -30,7 +30,7 @@ const Login = () => {
         </form>
         <div className="links">
           <Link to="/cadastro">crie sua conta</Link>
-          <Link to="/nova-senha">esqueci minha senha</Link>
+          <Link to="/recuperar-senha">esqueci minha senha</Link>
         </div>
       </div>
       <p className="disclaimer">
