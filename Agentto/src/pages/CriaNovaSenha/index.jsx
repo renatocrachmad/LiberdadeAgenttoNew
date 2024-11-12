@@ -1,37 +1,38 @@
 import React from "react";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./style.css";
 
-const Login = () => {
+const NovaSenha = () => {
   const navigate = useNavigate();
 
   const handleSubmit = (event) => {
     event.preventDefault(); // Evita o recarregamento da página
+    // Aqui você pode adicionar a lógica de autenticação se necessário
 
     // Redireciona para a página Home
     navigate("/home"); // Ajuste o caminho conforme a sua configuração de rotas
   };
 
   return (
-    <div className="login-container">
-      <div className="login-box">
+    <div className="novaSenha-container">
+      <div className="novaSenha-box">
         <div className="logo">Agentto</div>
-        <h2>Faça seu login</h2>
+        <h2>Crie sua nova senha</h2>
         <form onSubmit={handleSubmit}>
           <div className="input-group">
-            <label htmlFor="username">Usuário</label>
-            <input type="text" id="username" name="username" />
-          </div>
-          <div className="input-group">
-            <label htmlFor="password">Senha</label>
+            <label htmlFor="username">Nova senha</label>
             <input type="password" id="password" name="password" />
           </div>
-          <button type="submit">Entrar</button>
+          <div className="input-group">
+            <label htmlFor="repetirPassword">Repita sua nova senha</label>
+            <input
+              type="repetirPassword"
+              id="repetirPassword"
+              name="repetirPassword"
+            />
+          </div>
         </form>
-        <div className="links">
-          <Link to="/cadastro">crie sua conta</Link>
-          <Link to="/nova-senha">esqueci minha senha</Link>
-        </div>
+        <button type="submit">Redefinir senha</button>
       </div>
       <p className="disclaimer">
         Ao continuar, você concorda com os <a href="#">Termos de Uso</a> e a{" "}
@@ -42,4 +43,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default NovaSenha;

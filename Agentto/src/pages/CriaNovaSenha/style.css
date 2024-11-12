@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.novaSenha-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 400px; /* Define uma largura máxima */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.novaSenha-box {
+  width: 100%; /* Ajusta a largura para caber dentro do container */
+  height: 40vh;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 3px solid #6a1b9a; /* Borda colorida adicionada */
+}
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #6a1b9a;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 20px;
+    background-color: #6a1b9a;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 40px; /* Adiciona espaço entre os inputs e o botão */
+    font-size: 20px;
+  }
+  
+  
+  button:hover {
+    background-color: #4a148c;
+  }
+  
+  .disclaimer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #888;
+  }
+  
