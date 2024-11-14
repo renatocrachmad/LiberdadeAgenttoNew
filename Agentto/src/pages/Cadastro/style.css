@@ -6,6 +6,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  padding: 0 10px; /* Garantir que o conteúdo não encoste nas bordas */
+  box-sizing: border-box;
 }
 
 .register-container {
@@ -13,32 +15,36 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding: 0 10px; /* Garantir espaçamento nas bordas em dispositivos pequenos */
 }
 
 .register-box {
   background-color: #fff;
-  padding: 60px;
-  border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border: 3px solid #6a1b9a; /* Borda colorida adicionada */
+  padding: 1.5rem; /* Diminui o padding para compactar a caixa */
+  border-radius: 15px; /* Reduz o arredondamento das bordas */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #6a1b9a; /* Reduz a espessura da borda */
   text-align: center;
-  width: 300px;
+  width: 100%;
+  max-width: 350px; /* Reduz o tamanho máximo da caixa */
+  box-sizing: border-box;
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 1.25rem; /* Diminui o tamanho do logo */
   font-weight: bold;
   color: #6a1b9a;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem; /* Ajusta o espaçamento */
 }
 
 h2 {
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
   color: #333;
+  font-size: 1.125rem; /* Ajusta o tamanho da fonte */
 }
 
 .input-group {
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -46,7 +52,7 @@ h2 {
 
 .input-group input {
   width: 100%;
-  padding: 12px;
+  padding: 0.75rem; /* Diminui o padding dos inputs */
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
@@ -54,9 +60,10 @@ h2 {
 
 .input-group label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 0.25rem; /* Reduz o espaço entre o label e o input */
   color: #333;
   text-align: left;
+  font-size: 0.875rem; /* Ajusta o tamanho da fonte */
 }
 
 .checkbox-group {
@@ -67,9 +74,9 @@ h2 {
 }
 
 .checkbox-group input[type="checkbox"] {
-  width: 18px;
-  height: 18px;
-  margin-right: 10px;
+  width: 1rem; /* Diminui o tamanho do checkbox */
+  height: 1rem;
+  margin-right: 0.5rem; /* Ajusta o espaçamento */
 }
 
 .checkboxContainer {
@@ -77,17 +84,18 @@ h2 {
   justify-content: flex-start;
   flex-direction: column;
   color: #333;
-  margin-bottom: 30px;
+  margin-bottom: 1.5rem; /* Diminui o espaço entre o checkbox e o botão */
 }
 
 button {
   width: 100%;
-  padding: 10px;
+  padding: 0.75rem; /* Diminui o padding do botão */
   background-color: #6a1b9a;
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 0.875rem; /* Ajusta o tamanho da fonte do botão */
 }
 
 button:hover {
@@ -95,13 +103,14 @@ button:hover {
 }
 
 .links {
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 
 .links a {
   color: #6a1b9a;
   text-decoration: none;
   display: block;
+  font-size: 0.75rem; /* Reduz o tamanho da fonte dos links */
 }
 
 .links a:hover {

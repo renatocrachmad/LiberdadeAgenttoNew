@@ -6,6 +6,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  padding: 0 10px; /* Adiciona um pouco de espaçamento nas laterais */
+  box-sizing: border-box;
 }
 
 .novaSenha-container {
@@ -14,72 +16,73 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 400px; /* Define uma largura máxima */
-  padding: 20px;
+  max-width: 350px; /* Reduz a largura máxima */
+  padding: 1.5rem; /* Usa rem para o padding */
   box-sizing: border-box;
 }
 
 .novaSenha-box {
-  width: 100%; /* Ajusta a largura para caber dentro do container */
-  height: 40vh;
-  padding: 30px;
+  width: 100%;
+  height: auto; /* Remove a altura fixa para maior flexibilidade */
+  padding: 1.5rem; /* Diminui o padding para deixar o conteúdo mais compacto */
   background-color: #fff;
-  border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px; /* Reduz o arredondamento das bordas */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  border: 3px solid #6a1b9a; /* Borda colorida adicionada */
+  border: 2px solid #6a1b9a; /* Diminui a espessura da borda */
 }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #6a1b9a;
-    margin-bottom: 20px;
-  }
-  
-  h2 {
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  .input-group {
-    margin-bottom: 15px;
-    text-align: left;
-  }
-  
-  .input-group label {
-    display: block;
-    margin-bottom: 5px;
-    color: #333;
-  }
-  
-  .input-group input {
-    width: 100%;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  button {
-    width: 100%;
-    padding: 20px;
-    background-color: #6a1b9a;
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-top: 40px; /* Adiciona espaço entre os inputs e o botão */
-    font-size: 20px;
-  }
-  
-  
-  button:hover {
-    background-color: #4a148c;
-  }
-  
-  .disclaimer {
-    margin-top: 20px;
-    font-size: 0.9em;
-    color: #888;
-  }
-  
+
+.logo {
+  font-size: 1.5rem; /* Diminui o tamanho da fonte do logo */
+  font-weight: bold;
+  color: #6a1b9a;
+  margin-bottom: 1.25rem; /* Ajusta o espaçamento abaixo do logo */
+}
+
+h2 {
+  margin-bottom: 1rem; /* Diminui o espaçamento entre o título e os campos */
+  color: #333;
+  font-size: 1.125rem; /* Ajusta o tamanho da fonte */
+}
+
+.input-group {
+  margin-bottom: 1rem; /* Diminui o espaçamento entre os campos */
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.25rem; /* Diminui o espaço entre o label e o input */
+  color: #333;
+  font-size: 0.875rem; /* Ajusta o tamanho da fonte */
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.75rem; /* Diminui o padding do input */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem; /* Ajusta o tamanho da fonte do input */
+}
+
+button {
+  width: 100%;
+  padding: 1rem; /* Diminui o padding do botão */
+  background-color: #6a1b9a;
+  color: #fff;
+  border: none;
+  border-radius: 5px; /* Reduz o arredondamento do botão */
+  cursor: pointer;
+  margin-top: 1.5rem; /* Diminui o espaço entre o botão e os campos */
+  font-size: 1rem; /* Ajusta o tamanho da fonte do botão */
+}
+
+button:hover {
+  background-color: #4a148c;
+}
+
+.disclaimer {
+  margin-top: 1.25rem; /* Ajusta o espaço entre o disclaimer e o conteúdo anterior */
+  font-size: 0.85rem; /* Diminui o tamanho da fonte do disclaimer */
+  color: #888;
+}
