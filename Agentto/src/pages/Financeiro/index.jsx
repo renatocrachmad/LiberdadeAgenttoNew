@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useEventContext } from "../../contexts/EventContext/EventContext";
 import { useNavigate } from "react-router-dom"; 
 import "./style.css";
+import Header from "../../components/Header";
 
 const Financeiro = () => {
   const { eventos } = useEventContext();
@@ -25,8 +26,11 @@ const Financeiro = () => {
   };
 
   return (
+    <>
+    <Header />
+    
     <div className="financeiro-container">
-      <header className="header">
+      <aside className="aside">
         <h1 className="logo">Financeiro</h1>
         <nav>
           <ul className="menu">
@@ -35,7 +39,7 @@ const Financeiro = () => {
             <li onClick={() => navigate("/financeiro")}>Financeiro</li> 
           </ul>
         </nav>
-      </header>
+      </aside>
 
       <main className="content">
         <h2>Resumo Financeiro</h2>
@@ -73,6 +77,7 @@ const Financeiro = () => {
         <p>V 1.0</p>
       </footer>
     </div>
+    </>
   );
 };
 

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useEventContext } from "../../contexts/EventContext/EventContext";
 import "./style.css";
+import Header from "../../components/Header";
 
 const Agenda = () => {
   const [selectedDate, setSelectedDate] = useState(null);
@@ -58,7 +59,21 @@ const Agenda = () => {
   };
 
   return (
+
+    <>
+    <Header/>
+    
     <div className="agenda-container">
+    <aside className="aside">
+        <h1 className="logo">Financeiro</h1>
+        <nav>
+          <ul className="menu">
+            <li onClick={() => navigate("/home")}>Início</li> 
+            <li onClick={() => navigate("/agenda")}>Agenda</li>
+            <li onClick={() => navigate("/financeiro")}>Financeiro</li> 
+          </ul>
+        </nav>
+      </aside>
       <h2>Agenda</h2>
 
       <button onClick={() => openModal(new Date())}>Novo Evento</button>
@@ -143,6 +158,7 @@ const Agenda = () => {
         </div>
       )}
     </div>
+    </>
   );
 };
 
